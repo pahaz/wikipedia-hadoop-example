@@ -9,7 +9,7 @@ public class TestWikiWordInfoUpdater extends TestCase {
         info.set(new WikiWordInfoEntry("1", 2f, 22));
         assertEquals(info.getEntries()[0].tf, 2f);
         assertEquals(info.getEntries()[0].id, "1");
-        assertEquals( (int) info.getEntries()[0].freq, (int) 22);
+        assertEquals((int) info.getEntries()[0].freq, (int) 22);
 
         u.add(info);
         u.add(info);

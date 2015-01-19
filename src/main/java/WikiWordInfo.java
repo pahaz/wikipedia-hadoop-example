@@ -24,6 +24,7 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
         this.NUMBER_OF_DOCS = NUMBER_OF_DOCS;
         this.MAX_NUMBER_OF_RESULTS = MAX_NUMBER_OF_RESULTS;
     }
+
     public WikiWordInfo() throws NumberFormatException {
         this(1, 0);
     }
@@ -31,14 +32,16 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
     public Integer getTotalFreq() {
         return _totalFreq;
     }
-    public Float getIdf(){
+
+    public Float getIdf() {
         return _idf;
     }
+
     public WikiWordInfoEntry[] getEntries() {
         return entries;
     }
 
-    public void set(String id, Float tf, Integer freq){
+    public void set(String id, Float tf, Integer freq) {
         set(new WikiWordInfoEntry(id, tf, freq));
     }
 
@@ -72,7 +75,7 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
         _totalFreq = in.readInt();
         int length = in.readInt();
         entries = new WikiWordInfoEntry[length];
-        for (int i=0; i < length; i++) {
+        for (int i = 0; i < length; i++) {
             entries[i] = new WikiWordInfoEntry(in.readUTF(), in.readFloat(), in.readInt());
         }
     }
@@ -108,7 +111,7 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
             max = MAX_NUMBER_OF_RESULTS;
         }
         System.out.println(max);
-        for(WikiWordInfoEntry entry: sortedEntries){
+        for (WikiWordInfoEntry entry : sortedEntries) {
             sb.append(entry.id);
             sb.append(':');
             sb.append(entry.tf);
