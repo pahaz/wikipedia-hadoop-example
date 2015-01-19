@@ -1,0 +1,66 @@
+[s0073@umu30 ~]$ hadoop fs -ls -h /user/s0073/w_count_words_*/
+Found 14 items
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/_SUCCESS
+-rw-r--r--   3 s0073 supergroup         15 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00000
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00001
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00002
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00003
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00004
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00005
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00006
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00007
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00008
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00009
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00010
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00011
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:18 /user/s0073/w_count_words_en/part-00012
+Found 14 items
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:16 /user/s0073/w_count_words_ru/_SUCCESS
+-rw-r--r--   3 s0073 supergroup         15 2015-01-19 21:16 /user/s0073/w_count_words_ru/part-00000
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00001
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00002
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00003
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00004
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00005
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00006
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00007
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00008
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00009
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00010
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:15 /user/s0073/w_count_words_ru/part-00011
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:16 /user/s0073/w_count_words_ru/part-00012
+-rw-r--r--   3 s0073 supergroup         15 2015-01-19 22:11 /user/s0073/w_count_words_ru.txt
+[s0073@umu30 ~]$ hadoop fs -ls -h /user/s0073/w_tfidf_*/
+Found 14 items
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:36 /user/s0073/w_tfidf_en/_SUCCESS
+-rw-r--r--   3 s0073 supergroup     50.6 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00000
+-rw-r--r--   3 s0073 supergroup     50.7 M 2015-01-19 21:35 /user/s0073/w_tfidf_en/part-00001
+-rw-r--r--   3 s0073 supergroup     50.6 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00002
+-rw-r--r--   3 s0073 supergroup     50.6 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00003
+-rw-r--r--   3 s0073 supergroup     50.5 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00004
+-rw-r--r--   3 s0073 supergroup     50.5 M 2015-01-19 21:35 /user/s0073/w_tfidf_en/part-00005
+-rw-r--r--   3 s0073 supergroup     50.7 M 2015-01-19 21:35 /user/s0073/w_tfidf_en/part-00006
+-rw-r--r--   3 s0073 supergroup     50.5 M 2015-01-19 21:35 /user/s0073/w_tfidf_en/part-00007
+-rw-r--r--   3 s0073 supergroup     50.6 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00008
+-rw-r--r--   3 s0073 supergroup     50.5 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00009
+-rw-r--r--   3 s0073 supergroup     50.5 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00010
+-rw-r--r--   3 s0073 supergroup     50.7 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00011
+-rw-r--r--   3 s0073 supergroup     50.6 M 2015-01-19 21:36 /user/s0073/w_tfidf_en/part-00012
+Found 14 items
+-rw-r--r--   3 s0073 supergroup          0 2015-01-19 21:23 /user/s0073/w_tfidf_ru/_SUCCESS
+-rw-r--r--   3 s0073 supergroup     35.8 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00000
+-rw-r--r--   3 s0073 supergroup     35.7 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00001
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00002
+-rw-r--r--   3 s0073 supergroup     35.7 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00003
+-rw-r--r--   3 s0073 supergroup     35.7 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00004
+-rw-r--r--   3 s0073 supergroup     35.5 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00005
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00006
+-rw-r--r--   3 s0073 supergroup     35.7 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00007
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00008
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:22 /user/s0073/w_tfidf_ru/part-00009
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:23 /user/s0073/w_tfidf_ru/part-00010
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:23 /user/s0073/w_tfidf_ru/part-00011
+-rw-r--r--   3 s0073 supergroup     35.6 M 2015-01-19 21:23 /user/s0073/w_tfidf_ru/part-00012
+[s0073@umu30 ~]$ hadoop fs -cat /user/s0073/w_count_words_*/*
+Count:  4671978
+Count:  1507073

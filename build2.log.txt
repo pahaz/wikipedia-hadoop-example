@@ -1,0 +1,764 @@
+[127.0.0.1:13493] run: mkdir -p ~/wiki
+[127.0.0.1:13493] put: wiki\pom.xml -> /misc/home/s0073/wiki/pom.xml
+[127.0.0.1:13493] put: wiki\src\main\java\TestWikiWordInfo.java -> /misc/home/s0073/wiki/src/main/java/TestWikiWordInfo.java
+[127.0.0.1:13493] put: wiki\src\main\java\TestWikiWordInfoUpdater.java -> /misc/home/s0073/wiki/src/main/java/TestWikiWordInfoUpdater.java
+[127.0.0.1:13493] put: wiki\src\main\java\TestWikiWordTokenizer.java -> /misc/home/s0073/wiki/src/main/java/TestWikiWordTokenizer.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiNumberOfDocs.java -> /misc/home/s0073/wiki/src/main/java/WikiNumberOfDocs.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiWordInfo.java -> /misc/home/s0073/wiki/src/main/java/WikiWordInfo.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiWordInfoEntry.java -> /misc/home/s0073/wiki/src/main/java/WikiWordInfoEntry.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiWordInfoUpdater.java -> /misc/home/s0073/wiki/src/main/java/WikiWordInfoUpdater.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiWordTFIDFIndex.java -> /misc/home/s0073/wiki/src/main/java/WikiWordTFIDFIndex.java
+[127.0.0.1:13493] put: wiki\src\main\java\WikiWordTokenizer.java -> /misc/home/s0073/wiki/src/main/java/WikiWordTokenizer.java
+[127.0.0.1:13493] run: mvn compile
+[127.0.0.1:13493] out: [INFO] Scanning for projects...
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] Building hhd 1.0-SNAPSHOT
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[127.0.0.1:13493] out: [INFO] skip non existing resourceDirectory /misc/home/s0073/wiki/src/main/resources
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Changes detected - recompiling the module!
+[127.0.0.1:13493] out: [INFO] Compiling 9 source files to /misc/home/s0073/wiki/target/classes
+[127.0.0.1:13493] out: [WARNING] /misc/home/s0073/wiki/src/main/java/WikiWordTFIDFIndex.java: /misc/home/s0073/wiki/src/main/java/WikiWordTFIDFIndex.java uses or overrides a deprecate
+d API.
+[127.0.0.1:13493] out: [WARNING] /misc/home/s0073/wiki/src/main/java/WikiWordTFIDFIndex.java: Recompile with -Xlint:deprecation for details.
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] BUILD SUCCESS
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] Total time: 6.625 s
+[127.0.0.1:13493] out: [INFO] Finished at: 2015-01-19T21:14:19+06:00
+[127.0.0.1:13493] out: [INFO] Final Memory: 20M/303M
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: mvn package
+[127.0.0.1:13493] out: [INFO] Scanning for projects...
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] Building hhd 1.0-SNAPSHOT
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[127.0.0.1:13493] out: [INFO] skip non existing resourceDirectory /misc/home/s0073/wiki/src/main/resources
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Nothing to compile - all classes are up to date
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[127.0.0.1:13493] out: [INFO] skip non existing resourceDirectory /misc/home/s0073/wiki/src/test/resources
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hhd ---
+[127.0.0.1:13493] out: [INFO] No sources to compile
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ hhd ---
+[127.0.0.1:13493] out: [INFO] No tests to run.
+[127.0.0.1:13493] out: [INFO]
+[127.0.0.1:13493] out: [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ hhd ---
+[127.0.0.1:13493] out: [INFO] Building jar: /misc/home/s0073/wiki/target/hhd-1.0-SNAPSHOT.jar
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] BUILD SUCCESS
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out: [INFO] Total time: 4.737 s
+[127.0.0.1:13493] out: [INFO] Finished at: 2015-01-19T21:14:27+06:00
+[127.0.0.1:13493] out: [INFO] Final Memory: 15M/303M
+[127.0.0.1:13493] out: [INFO] ------------------------------------------------------------------------
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop fs -rm -r /user/s0073/w_count_words_ru || echo "No"
+[127.0.0.1:13493] out: 15/01/19 21:14:31 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.
+[127.0.0.1:13493] out: Moved: 'hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/w_count_words_ru' to trash at: hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/.Trash/Current
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop fs -rm -r /user/s0073/w_count_words_en || echo "No"
+[127.0.0.1:13493] out: 15/01/19 21:14:36 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.
+[127.0.0.1:13493] out: Moved: 'hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/w_count_words_en' to trash at: hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/.Trash/Current
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop fs -rm -r /user/s0073/w_tfidf_ru || echo "No"
+[127.0.0.1:13493] out: 15/01/19 21:14:40 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.
+[127.0.0.1:13493] out: Moved: 'hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/w_tfidf_ru' to trash at: hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/.Trash/Current
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop fs -rm -r /user/s0073/w_tfidf_en || echo "No"
+[127.0.0.1:13493] out: 15/01/19 21:14:44 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.
+[127.0.0.1:13493] out: Moved: 'hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/w_tfidf_en' to trash at: hdfs://umu30.um64.imm.uran.ru:8020/user/s0073/.Trash/Current
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiNumberOfDocs   /data/wiki/ru/articles /user/s0073/w_count_words_ru
+[127.0.0.1:13493] out: 15/01/19 21:14:48 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:14:49 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:14:49 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with
+ToolRunner to remedy this.
+[127.0.0.1:13493] out: 15/01/19 21:14:50 INFO mapred.FileInputFormat: Total input paths to process : 1
+[127.0.0.1:13493] out: 15/01/19 21:14:50 INFO mapreduce.JobSubmitter: number of splits:43
+[127.0.0.1:13493] out: 15/01/19 21:14:51 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1418053947170_0791
+[127.0.0.1:13493] out: 15/01/19 21:14:52 INFO impl.YarnClientImpl: Submitted application application_1418053947170_0791
+[127.0.0.1:13493] out: 15/01/19 21:14:52 INFO mapreduce.Job: The url to track the job: http://umu30.um64.imm.uran.ru:8088/proxy/application_1418053947170_0791/
+[127.0.0.1:13493] out: 15/01/19 21:14:52 INFO mapreduce.Job: Running job: job_1418053947170_0791
+[127.0.0.1:13493] out: 15/01/19 21:15:07 INFO mapreduce.Job: Job job_1418053947170_0791 running in uber mode : false
+[127.0.0.1:13493] out: 15/01/19 21:15:07 INFO mapreduce.Job:  map 0% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:19 INFO mapreduce.Job:  map 7% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:20 INFO mapreduce.Job:  map 26% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:21 INFO mapreduce.Job:  map 28% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:24 INFO mapreduce.Job:  map 33% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:31 INFO mapreduce.Job:  map 37% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:32 INFO mapreduce.Job:  map 47% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:33 INFO mapreduce.Job:  map 56% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:34 INFO mapreduce.Job:  map 58% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:35 INFO mapreduce.Job:  map 60% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:41 INFO mapreduce.Job:  map 63% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:42 INFO mapreduce.Job:  map 70% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:43 INFO mapreduce.Job:  map 74% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:44 INFO mapreduce.Job:  map 84% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:45 INFO mapreduce.Job:  map 88% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:46 INFO mapreduce.Job:  map 93% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:51 INFO mapreduce.Job:  map 95% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:56 INFO mapreduce.Job:  map 98% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:58 INFO mapreduce.Job:  map 100% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:15:59 INFO mapreduce.Job:  map 100% reduce 69%
+[127.0.0.1:13493] out: 15/01/19 21:16:00 INFO mapreduce.Job:  map 100% reduce 90%
+[127.0.0.1:13493] out: 15/01/19 21:16:01 INFO mapreduce.Job:  map 100% reduce 92%
+[127.0.0.1:13493] out: 15/01/19 21:16:03 INFO mapreduce.Job:  map 100% reduce 100%
+[127.0.0.1:13493] out: 15/01/19 21:16:04 INFO mapreduce.Job: Job job_1418053947170_0791 completed successfully
+[127.0.0.1:13493] out: 15/01/19 21:16:04 INFO mapreduce.Job: Counters: 50
+[127.0.0.1:13493] out:  File System Counters
+[127.0.0.1:13493] out:          FILE: Number of bytes read=928459
+[127.0.0.1:13493] out:          FILE: Number of bytes written=7831813
+[127.0.0.1:13493] out:          FILE: Number of read operations=0
+[127.0.0.1:13493] out:          FILE: Number of large read operations=0
+[127.0.0.1:13493] out:          FILE: Number of write operations=0
+[127.0.0.1:13493] out:          HDFS: Number of bytes read=5719554949
+[127.0.0.1:13493] out:          HDFS: Number of bytes written=15
+[127.0.0.1:13493] out:          HDFS: Number of read operations=168
+[127.0.0.1:13493] out:          HDFS: Number of large read operations=0
+[127.0.0.1:13493] out:          HDFS: Number of write operations=26
+[127.0.0.1:13493] out:  Job Counters
+[127.0.0.1:13493] out:          Launched map tasks=43
+[127.0.0.1:13493] out:          Launched reduce tasks=13
+[127.0.0.1:13493] out:          Data-local map tasks=42
+[127.0.0.1:13493] out:          Rack-local map tasks=1
+[127.0.0.1:13493] out:          Total time spent by all maps in occupied slots (ms)=480155
+[127.0.0.1:13493] out:          Total time spent by all reduces in occupied slots (ms)=127386
+[127.0.0.1:13493] out:          Total time spent by all map tasks (ms)=480155
+[127.0.0.1:13493] out:          Total time spent by all reduce tasks (ms)=127386
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all map tasks=480155
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all reduce tasks=127386
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all map tasks=491678720
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all reduce tasks=130443264
+[127.0.0.1:13493] out:  Map-Reduce Framework
+[127.0.0.1:13493] out:          Map input records=1514046
+[127.0.0.1:13493] out:          Map output records=1507073
+[127.0.0.1:13493] out:          Map output bytes=16577803
+[127.0.0.1:13493] out:          Map output materialized bytes=937169
+[127.0.0.1:13493] out:          Input split bytes=4644
+[127.0.0.1:13493] out:          Combine input records=0
+[127.0.0.1:13493] out:          Combine output records=0
+[127.0.0.1:13493] out:          Reduce input groups=1
+[127.0.0.1:13493] out:          Reduce shuffle bytes=937169
+[127.0.0.1:13493] out:          Reduce input records=1507073
+[127.0.0.1:13493] out:          Reduce output records=1
+[127.0.0.1:13493] out:          Spilled Records=3014146
+[127.0.0.1:13493] out:          Shuffled Maps =559
+[127.0.0.1:13493] out:          Failed Shuffles=0
+[127.0.0.1:13493] out:          Merged Map outputs=559
+[127.0.0.1:13493] out:          GC time elapsed (ms)=11270
+[127.0.0.1:13493] out:          CPU time spent (ms)=268130
+[127.0.0.1:13493] out:          Physical memory (bytes) snapshot=29229477888
+[127.0.0.1:13493] out:          Virtual memory (bytes) snapshot=85663088640
+[127.0.0.1:13493] out:          Total committed heap usage (bytes)=28815392768
+[127.0.0.1:13493] out:  Shuffle Errors
+[127.0.0.1:13493] out:          BAD_ID=0
+[127.0.0.1:13493] out:          CONNECTION=0
+[127.0.0.1:13493] out:          IO_ERROR=0
+[127.0.0.1:13493] out:          WRONG_LENGTH=0
+[127.0.0.1:13493] out:          WRONG_MAP=0
+[127.0.0.1:13493] out:          WRONG_REDUCE=0
+[127.0.0.1:13493] out:  File Input Format Counters
+[127.0.0.1:13493] out:          Bytes Read=5719550305
+[127.0.0.1:13493] out:  File Output Format Counters
+[127.0.0.1:13493] out:          Bytes Written=15
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiNumberOfDocs   /data/wiki/en/articles /user/s0073/w_count_words_en
+[127.0.0.1:13493] out: 15/01/19 21:16:08 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:16:09 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:16:09 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with
+ToolRunner to remedy this.
+[127.0.0.1:13493] out: 15/01/19 21:16:10 INFO mapred.FileInputFormat: Total input paths to process : 1
+[127.0.0.1:13493] out: 15/01/19 21:16:10 INFO mapreduce.JobSubmitter: number of splits:105
+[127.0.0.1:13493] out: 15/01/19 21:16:11 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1418053947170_0792
+[127.0.0.1:13493] out: 15/01/19 21:16:11 INFO impl.YarnClientImpl: Submitted application application_1418053947170_0792
+[127.0.0.1:13493] out: 15/01/19 21:16:11 INFO mapreduce.Job: The url to track the job: http://umu30.um64.imm.uran.ru:8088/proxy/application_1418053947170_0792/
+[127.0.0.1:13493] out: 15/01/19 21:16:11 INFO mapreduce.Job: Running job: job_1418053947170_0792
+[127.0.0.1:13493] out: 15/01/19 21:16:27 INFO mapreduce.Job: Job job_1418053947170_0792 running in uber mode : false
+[127.0.0.1:13493] out: 15/01/19 21:16:27 INFO mapreduce.Job:  map 0% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:39 INFO mapreduce.Job:  map 2% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:40 INFO mapreduce.Job:  map 9% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:41 INFO mapreduce.Job:  map 11% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:43 INFO mapreduce.Job:  map 12% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:44 INFO mapreduce.Job:  map 13% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:50 INFO mapreduce.Job:  map 15% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:51 INFO mapreduce.Job:  map 17% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:52 INFO mapreduce.Job:  map 19% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:53 INFO mapreduce.Job:  map 22% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:54 INFO mapreduce.Job:  map 24% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:55 INFO mapreduce.Job:  map 25% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:16:59 INFO mapreduce.Job:  map 26% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:01 INFO mapreduce.Job:  map 27% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:02 INFO mapreduce.Job:  map 29% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:03 INFO mapreduce.Job:  map 30% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:04 INFO mapreduce.Job:  map 31% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:05 INFO mapreduce.Job:  map 33% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:06 INFO mapreduce.Job:  map 35% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:07 INFO mapreduce.Job:  map 37% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:08 INFO mapreduce.Job:  map 38% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:13 INFO mapreduce.Job:  map 40% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:14 INFO mapreduce.Job:  map 42% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:15 INFO mapreduce.Job:  map 45% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:16 INFO mapreduce.Job:  map 47% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:17 INFO mapreduce.Job:  map 49% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:18 INFO mapreduce.Job:  map 50% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:19 INFO mapreduce.Job:  map 51% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:24 INFO mapreduce.Job:  map 53% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:25 INFO mapreduce.Job:  map 55% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:26 INFO mapreduce.Job:  map 56% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:28 INFO mapreduce.Job:  map 60% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:29 INFO mapreduce.Job:  map 63% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:31 INFO mapreduce.Job:  map 65% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:35 INFO mapreduce.Job:  map 66% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:36 INFO mapreduce.Job:  map 67% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:37 INFO mapreduce.Job:  map 70% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:38 INFO mapreduce.Job:  map 71% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:39 INFO mapreduce.Job:  map 74% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:40 INFO mapreduce.Job:  map 75% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:42 INFO mapreduce.Job:  map 76% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:44 INFO mapreduce.Job:  map 77% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:46 INFO mapreduce.Job:  map 78% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:47 INFO mapreduce.Job:  map 80% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:48 INFO mapreduce.Job:  map 84% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:49 INFO mapreduce.Job:  map 85% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:50 INFO mapreduce.Job:  map 87% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:51 INFO mapreduce.Job:  map 89% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:53 INFO mapreduce.Job:  map 90% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:58 INFO mapreduce.Job:  map 91% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:17:59 INFO mapreduce.Job:  map 96% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:00 INFO mapreduce.Job:  map 97% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:02 INFO mapreduce.Job:  map 100% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:04 INFO mapreduce.Job:  map 100% reduce 15%
+[127.0.0.1:13493] out: 15/01/19 21:18:05 INFO mapreduce.Job:  map 100% reduce 35%
+[127.0.0.1:13493] out: 15/01/19 21:18:06 INFO mapreduce.Job:  map 100% reduce 66%
+[127.0.0.1:13493] out: 15/01/19 21:18:07 INFO mapreduce.Job:  map 100% reduce 73%
+[127.0.0.1:13493] out: 15/01/19 21:18:08 INFO mapreduce.Job:  map 100% reduce 74%
+[127.0.0.1:13493] out: 15/01/19 21:18:10 INFO mapreduce.Job:  map 100% reduce 82%
+[127.0.0.1:13493] out: 15/01/19 21:18:11 INFO mapreduce.Job:  map 100% reduce 92%
+[127.0.0.1:13493] out: 15/01/19 21:18:14 INFO mapreduce.Job:  map 100% reduce 100%
+[127.0.0.1:13493] out: 15/01/19 21:18:14 INFO mapreduce.Job: Job job_1418053947170_0792 completed successfully
+[127.0.0.1:13493] out: 15/01/19 21:18:14 INFO mapreduce.Job: Counters: 50
+[127.0.0.1:13493] out:  File System Counters
+[127.0.0.1:13493] out:          FILE: Number of bytes read=2877727
+[127.0.0.1:13493] out:          FILE: Number of bytes written=18353832
+[127.0.0.1:13493] out:          FILE: Number of read operations=0
+[127.0.0.1:13493] out:          FILE: Number of large read operations=0
+[127.0.0.1:13493] out:          FILE: Number of write operations=0
+[127.0.0.1:13493] out:          HDFS: Number of bytes read=14029923872
+[127.0.0.1:13493] out:          HDFS: Number of bytes written=15
+[127.0.0.1:13493] out:          HDFS: Number of read operations=354
+[127.0.0.1:13493] out:          HDFS: Number of large read operations=0
+[127.0.0.1:13493] out:          HDFS: Number of write operations=26
+[127.0.0.1:13493] out:  Job Counters
+[127.0.0.1:13493] out:          Launched map tasks=105
+[127.0.0.1:13493] out:          Launched reduce tasks=13
+[127.0.0.1:13493] out:          Data-local map tasks=104
+[127.0.0.1:13493] out:          Rack-local map tasks=1
+[127.0.0.1:13493] out:          Total time spent by all maps in occupied slots (ms)=1123254
+[127.0.0.1:13493] out:          Total time spent by all reduces in occupied slots (ms)=97434
+[127.0.0.1:13493] out:          Total time spent by all map tasks (ms)=1123254
+[127.0.0.1:13493] out:          Total time spent by all reduce tasks (ms)=97434
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all map tasks=1123254
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all reduce tasks=97434
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all map tasks=1150212096
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all reduce tasks=99772416
+[127.0.0.1:13493] out:  Map-Reduce Framework
+[127.0.0.1:13493] out:          Map input records=4735398
+[127.0.0.1:13493] out:          Map output records=4671978
+[127.0.0.1:13493] out:          Map output bytes=51391758
+[127.0.0.1:13493] out:          Map output materialized bytes=2899419
+[127.0.0.1:13493] out:          Input split bytes=11340
+[127.0.0.1:13493] out:          Combine input records=0
+[127.0.0.1:13493] out:          Combine output records=0
+[127.0.0.1:13493] out:          Reduce input groups=1
+[127.0.0.1:13493] out:          Reduce shuffle bytes=2899419
+[127.0.0.1:13493] out:          Reduce input records=4671978
+[127.0.0.1:13493] out:          Reduce output records=1
+[127.0.0.1:13493] out:          Spilled Records=9343956
+[127.0.0.1:13493] out:          Shuffled Maps =1365
+[127.0.0.1:13493] out:          Failed Shuffles=0
+[127.0.0.1:13493] out:          Merged Map outputs=1365
+[127.0.0.1:13493] out:          GC time elapsed (ms)=26814
+[127.0.0.1:13493] out:          CPU time spent (ms)=601410
+[127.0.0.1:13493] out:          Physical memory (bytes) snapshot=68641927168
+[127.0.0.1:13493] out:          Virtual memory (bytes) snapshot=180107014144
+[127.0.0.1:13493] out:          Total committed heap usage (bytes)=67163389952
+[127.0.0.1:13493] out:  Shuffle Errors
+[127.0.0.1:13493] out:          BAD_ID=0
+[127.0.0.1:13493] out:          CONNECTION=0
+[127.0.0.1:13493] out:          IO_ERROR=0
+[127.0.0.1:13493] out:          WRONG_LENGTH=0
+[127.0.0.1:13493] out:          WRONG_MAP=0
+[127.0.0.1:13493] out:          WRONG_REDUCE=0
+[127.0.0.1:13493] out:  File Input Format Counters
+[127.0.0.1:13493] out:          Bytes Read=14029912532
+[127.0.0.1:13493] out:  File Output Format Counters
+[127.0.0.1:13493] out:          Bytes Written=15
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/ru/articles /user/s0073/w_count_words_ru/part-00000 /user/s0073/w_tfidf_ru
+[127.0.0.1:13493] out: 15/01/19 21:18:18 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:18:19 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:18:19 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with
+ToolRunner to remedy this.
+[127.0.0.1:13493] out: 15/01/19 21:18:20 INFO mapred.FileInputFormat: Total input paths to process : 1
+[127.0.0.1:13493] out: 15/01/19 21:18:20 INFO mapreduce.JobSubmitter: number of splits:43
+[127.0.0.1:13493] out: 15/01/19 21:18:20 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1418053947170_0793
+[127.0.0.1:13493] out: 15/01/19 21:18:21 INFO impl.YarnClientImpl: Submitted application application_1418053947170_0793
+[127.0.0.1:13493] out: 15/01/19 21:18:21 INFO mapreduce.Job: The url to track the job: http://umu30.um64.imm.uran.ru:8088/proxy/application_1418053947170_0793/
+[127.0.0.1:13493] out: 15/01/19 21:18:21 INFO mapreduce.Job: Running job: job_1418053947170_0793
+[127.0.0.1:13493] out: 15/01/19 21:18:36 INFO mapreduce.Job: Job job_1418053947170_0793 running in uber mode : false
+[127.0.0.1:13493] out: 15/01/19 21:18:36 INFO mapreduce.Job:  map 0% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:49 INFO mapreduce.Job:  map 3% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:51 INFO mapreduce.Job:  map 4% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:52 INFO mapreduce.Job:  map 6% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:54 INFO mapreduce.Job:  map 7% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:55 INFO mapreduce.Job:  map 10% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:18:58 INFO mapreduce.Job:  map 13% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:00 INFO mapreduce.Job:  map 14% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:01 INFO mapreduce.Job:  map 16% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:03 INFO mapreduce.Job:  map 17% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:04 INFO mapreduce.Job:  map 19% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:07 INFO mapreduce.Job:  map 20% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:13 INFO mapreduce.Job:  map 21% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:19 INFO mapreduce.Job:  map 22% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:22 INFO mapreduce.Job:  map 26% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:24 INFO mapreduce.Job:  map 27% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:25 INFO mapreduce.Job:  map 28% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:26 INFO mapreduce.Job:  map 29% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:31 INFO mapreduce.Job:  map 30% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:32 INFO mapreduce.Job:  map 31% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:33 INFO mapreduce.Job:  map 32% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:36 INFO mapreduce.Job:  map 34% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:37 INFO mapreduce.Job:  map 35% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:38 INFO mapreduce.Job:  map 36% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:39 INFO mapreduce.Job:  map 37% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:41 INFO mapreduce.Job:  map 38% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:42 INFO mapreduce.Job:  map 39% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:43 INFO mapreduce.Job:  map 40% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:45 INFO mapreduce.Job:  map 42% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:48 INFO mapreduce.Job:  map 43% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:49 INFO mapreduce.Job:  map 44% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:50 INFO mapreduce.Job:  map 45% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:52 INFO mapreduce.Job:  map 46% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:53 INFO mapreduce.Job:  map 47% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:55 INFO mapreduce.Job:  map 48% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:19:58 INFO mapreduce.Job:  map 49% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:01 INFO mapreduce.Job:  map 50% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:03 INFO mapreduce.Job:  map 51% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:06 INFO mapreduce.Job:  map 52% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:10 INFO mapreduce.Job:  map 53% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:11 INFO mapreduce.Job:  map 54% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:12 INFO mapreduce.Job:  map 55% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:13 INFO mapreduce.Job:  map 57% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:14 INFO mapreduce.Job:  map 58% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:15 INFO mapreduce.Job:  map 59% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:20 INFO mapreduce.Job:  map 60% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:24 INFO mapreduce.Job:  map 61% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:25 INFO mapreduce.Job:  map 62% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:26 INFO mapreduce.Job:  map 63% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:27 INFO mapreduce.Job:  map 64% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:29 INFO mapreduce.Job:  map 65% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:30 INFO mapreduce.Job:  map 66% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:32 INFO mapreduce.Job:  map 67% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:33 INFO mapreduce.Job:  map 68% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:34 INFO mapreduce.Job:  map 69% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:35 INFO mapreduce.Job:  map 70% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:36 INFO mapreduce.Job:  map 71% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:37 INFO mapreduce.Job:  map 72% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:38 INFO mapreduce.Job:  map 73% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:40 INFO mapreduce.Job:  map 75% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:43 INFO mapreduce.Job:  map 76% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:46 INFO mapreduce.Job:  map 77% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:49 INFO mapreduce.Job:  map 78% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:52 INFO mapreduce.Job:  map 79% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:55 INFO mapreduce.Job:  map 80% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:58 INFO mapreduce.Job:  map 81% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:20:59 INFO mapreduce.Job:  map 82% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:01 INFO mapreduce.Job:  map 84% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:03 INFO mapreduce.Job:  map 85% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:04 INFO mapreduce.Job:  map 86% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:07 INFO mapreduce.Job:  map 87% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:10 INFO mapreduce.Job:  map 88% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:13 INFO mapreduce.Job:  map 89% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:14 INFO mapreduce.Job:  map 90% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:16 INFO mapreduce.Job:  map 91% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:19 INFO mapreduce.Job:  map 92% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:23 INFO mapreduce.Job:  map 93% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:26 INFO mapreduce.Job:  map 94% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:29 INFO mapreduce.Job:  map 95% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:21:32 INFO mapreduce.Job:  map 95% reduce 2%
+[127.0.0.1:13493] out: 15/01/19 21:21:33 INFO mapreduce.Job:  map 95% reduce 11%
+[127.0.0.1:13493] out: 15/01/19 21:21:35 INFO mapreduce.Job:  map 96% reduce 13%
+[127.0.0.1:13493] out: 15/01/19 21:21:38 INFO mapreduce.Job:  map 96% reduce 14%
+[127.0.0.1:13493] out: 15/01/19 21:21:39 INFO mapreduce.Job:  map 96% reduce 17%
+[127.0.0.1:13493] out: 15/01/19 21:21:43 INFO mapreduce.Job:  map 97% reduce 17%
+[127.0.0.1:13493] out: 15/01/19 21:21:44 INFO mapreduce.Job:  map 97% reduce 19%
+[127.0.0.1:13493] out: 15/01/19 21:21:45 INFO mapreduce.Job:  map 98% reduce 20%
+[127.0.0.1:13493] out: 15/01/19 21:21:49 INFO mapreduce.Job:  map 98% reduce 21%
+[127.0.0.1:13493] out: 15/01/19 21:21:50 INFO mapreduce.Job:  map 99% reduce 21%
+[127.0.0.1:13493] out: 15/01/19 21:21:51 INFO mapreduce.Job:  map 99% reduce 22%
+[127.0.0.1:13493] out: 15/01/19 21:21:54 INFO mapreduce.Job:  map 100% reduce 22%
+[127.0.0.1:13493] out: 15/01/19 21:21:56 INFO mapreduce.Job:  map 100% reduce 26%
+[127.0.0.1:13493] out: 15/01/19 21:21:57 INFO mapreduce.Job:  map 100% reduce 32%
+[127.0.0.1:13493] out: 15/01/19 21:21:58 INFO mapreduce.Job:  map 100% reduce 33%
+[127.0.0.1:13493] out: 15/01/19 21:22:00 INFO mapreduce.Job:  map 100% reduce 37%
+[127.0.0.1:13493] out: 15/01/19 21:22:01 INFO mapreduce.Job:  map 100% reduce 38%
+[127.0.0.1:13493] out: 15/01/19 21:22:03 INFO mapreduce.Job:  map 100% reduce 44%
+[127.0.0.1:13493] out: 15/01/19 21:22:04 INFO mapreduce.Job:  map 100% reduce 47%
+[127.0.0.1:13493] out: 15/01/19 21:22:05 INFO mapreduce.Job:  map 100% reduce 52%
+[127.0.0.1:13493] out: 15/01/19 21:22:06 INFO mapreduce.Job:  map 100% reduce 53%
+[127.0.0.1:13493] out: 15/01/19 21:22:07 INFO mapreduce.Job:  map 100% reduce 55%
+[127.0.0.1:13493] out: 15/01/19 21:22:09 INFO mapreduce.Job:  map 100% reduce 57%
+[127.0.0.1:13493] out: 15/01/19 21:22:11 INFO mapreduce.Job:  map 100% reduce 60%
+[127.0.0.1:13493] out: 15/01/19 21:22:12 INFO mapreduce.Job:  map 100% reduce 61%
+[127.0.0.1:13493] out: 15/01/19 21:22:15 INFO mapreduce.Job:  map 100% reduce 62%
+[127.0.0.1:13493] out: 15/01/19 21:22:16 INFO mapreduce.Job:  map 100% reduce 63%
+[127.0.0.1:13493] out: 15/01/19 21:22:18 INFO mapreduce.Job:  map 100% reduce 66%
+[127.0.0.1:13493] out: 15/01/19 21:22:22 INFO mapreduce.Job:  map 100% reduce 69%
+[127.0.0.1:13493] out: 15/01/19 21:22:24 INFO mapreduce.Job:  map 100% reduce 70%
+[127.0.0.1:13493] out: 15/01/19 21:22:30 INFO mapreduce.Job:  map 100% reduce 71%
+[127.0.0.1:13493] out: 15/01/19 21:22:34 INFO mapreduce.Job:  map 100% reduce 72%
+[127.0.0.1:13493] out: 15/01/19 21:22:39 INFO mapreduce.Job:  map 100% reduce 73%
+[127.0.0.1:13493] out: 15/01/19 21:22:43 INFO mapreduce.Job:  map 100% reduce 74%
+[127.0.0.1:13493] out: 15/01/19 21:22:46 INFO mapreduce.Job:  map 100% reduce 78%
+[127.0.0.1:13493] out: 15/01/19 21:22:47 INFO mapreduce.Job:  map 100% reduce 82%
+[127.0.0.1:13493] out: 15/01/19 21:22:48 INFO mapreduce.Job:  map 100% reduce 84%
+[127.0.0.1:13493] out: 15/01/19 21:22:49 INFO mapreduce.Job:  map 100% reduce 86%
+[127.0.0.1:13493] out: 15/01/19 21:22:52 INFO mapreduce.Job:  map 100% reduce 88%
+[127.0.0.1:13493] out: 15/01/19 21:22:54 INFO mapreduce.Job:  map 100% reduce 90%
+[127.0.0.1:13493] out: 15/01/19 21:22:56 INFO mapreduce.Job:  map 100% reduce 92%
+[127.0.0.1:13493] out: 15/01/19 21:23:00 INFO mapreduce.Job:  map 100% reduce 94%
+[127.0.0.1:13493] out: 15/01/19 21:23:03 INFO mapreduce.Job:  map 100% reduce 96%
+[127.0.0.1:13493] out: 15/01/19 21:23:04 INFO mapreduce.Job:  map 100% reduce 98%
+[127.0.0.1:13493] out: 15/01/19 21:23:13 INFO mapreduce.Job:  map 100% reduce 100%
+[127.0.0.1:13493] out: 15/01/19 21:23:13 INFO mapreduce.Job: Job job_1418053947170_0793 completed successfully
+[127.0.0.1:13493] out: 15/01/19 21:23:13 INFO mapreduce.Job: Counters: 50
+[127.0.0.1:13493] out:  File System Counters
+[127.0.0.1:13493] out:          FILE: Number of bytes read=5413625198
+[127.0.0.1:13493] out:          FILE: Number of bytes written=8147085926
+[127.0.0.1:13493] out:          FILE: Number of read operations=0
+[127.0.0.1:13493] out:          FILE: Number of large read operations=0
+[127.0.0.1:13493] out:          FILE: Number of write operations=0
+[127.0.0.1:13493] out:          HDFS: Number of bytes read=5719554949
+[127.0.0.1:13493] out:          HDFS: Number of bytes written=485845115
+[127.0.0.1:13493] out:          HDFS: Number of read operations=168
+[127.0.0.1:13493] out:          HDFS: Number of large read operations=0
+[127.0.0.1:13493] out:          HDFS: Number of write operations=26
+[127.0.0.1:13493] out:  Job Counters
+[127.0.0.1:13493] out:          Launched map tasks=43
+[127.0.0.1:13493] out:          Launched reduce tasks=13
+[127.0.0.1:13493] out:          Data-local map tasks=41
+[127.0.0.1:13493] out:          Rack-local map tasks=2
+[127.0.0.1:13493] out:          Total time spent by all maps in occupied slots (ms)=2133937
+[127.0.0.1:13493] out:          Total time spent by all reduces in occupied slots (ms)=1076853
+[127.0.0.1:13493] out:          Total time spent by all map tasks (ms)=2133937
+[127.0.0.1:13493] out:          Total time spent by all reduce tasks (ms)=1076853
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all map tasks=2133937
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all reduce tasks=1076853
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all map tasks=2185151488
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all reduce tasks=1102697472
+[127.0.0.1:13493] out:  Map-Reduce Framework
+[127.0.0.1:13493] out:          Map input records=1514046
+[127.0.0.1:13493] out:          Map output records=218093716
+[127.0.0.1:13493] out:          Map output bytes=8849126897
+[127.0.0.1:13493] out:          Map output materialized bytes=2760996795
+[127.0.0.1:13493] out:          Input split bytes=4644
+[127.0.0.1:13493] out:          Combine input records=0
+[127.0.0.1:13493] out:          Combine output records=0
+[127.0.0.1:13493] out:          Reduce input groups=6056257
+[127.0.0.1:13493] out:          Reduce shuffle bytes=2760996795
+[127.0.0.1:13493] out:          Reduce input records=218093716
+[127.0.0.1:13493] out:          Reduce output records=6056257
+[127.0.0.1:13493] out:          Spilled Records=651205169
+[127.0.0.1:13493] out:          Shuffled Maps =559
+[127.0.0.1:13493] out:          Failed Shuffles=0
+[127.0.0.1:13493] out:          Merged Map outputs=559
+[127.0.0.1:13493] out:          GC time elapsed (ms)=66545
+[127.0.0.1:13493] out:          CPU time spent (ms)=3185900
+[127.0.0.1:13493] out:          Physical memory (bytes) snapshot=36721135616
+[127.0.0.1:13493] out:          Virtual memory (bytes) snapshot=85832638464
+[127.0.0.1:13493] out:          Total committed heap usage (bytes)=32659472384
+[127.0.0.1:13493] out:  Shuffle Errors
+[127.0.0.1:13493] out:          BAD_ID=0
+[127.0.0.1:13493] out:          CONNECTION=0
+[127.0.0.1:13493] out:          IO_ERROR=0
+[127.0.0.1:13493] out:          WRONG_LENGTH=0
+[127.0.0.1:13493] out:          WRONG_MAP=0
+[127.0.0.1:13493] out:          WRONG_REDUCE=0
+[127.0.0.1:13493] out:  File Input Format Counters
+[127.0.0.1:13493] out:          Bytes Read=5719550305
+[127.0.0.1:13493] out:  File Output Format Counters
+[127.0.0.1:13493] out:          Bytes Written=485845115
+[127.0.0.1:13493] out:
+
+[127.0.0.1:13493] run: hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/en/articles /user/s0073/w_count_words_en/part-00000 /user/s0073/w_tfidf_en
+[127.0.0.1:13493] out: 15/01/19 21:23:18 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:23:18 INFO client.RMProxy: Connecting to ResourceManager at umu30.um64.imm.uran.ru/192.168.1.30:8032
+[127.0.0.1:13493] out: 15/01/19 21:23:18 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with
+ToolRunner to remedy this.
+[127.0.0.1:13493] out: 15/01/19 21:23:19 INFO mapred.FileInputFormat: Total input paths to process : 1
+[127.0.0.1:13493] out: 15/01/19 21:23:20 INFO mapreduce.JobSubmitter: number of splits:105
+[127.0.0.1:13493] out: 15/01/19 21:23:20 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1418053947170_0796
+[127.0.0.1:13493] out: 15/01/19 21:23:21 INFO impl.YarnClientImpl: Submitted application application_1418053947170_0796
+[127.0.0.1:13493] out: 15/01/19 21:23:21 INFO mapreduce.Job: The url to track the job: http://umu30.um64.imm.uran.ru:8088/proxy/application_1418053947170_0796/
+[127.0.0.1:13493] out: 15/01/19 21:23:21 INFO mapreduce.Job: Running job: job_1418053947170_0796
+[127.0.0.1:13493] out: 15/01/19 21:23:36 INFO mapreduce.Job: Job job_1418053947170_0796 running in uber mode : false
+[127.0.0.1:13493] out: 15/01/19 21:23:36 INFO mapreduce.Job:  map 0% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:23:50 INFO mapreduce.Job:  map 1% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:23:53 INFO mapreduce.Job:  map 2% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:23:54 INFO mapreduce.Job:  map 3% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:23:57 INFO mapreduce.Job:  map 4% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:00 INFO mapreduce.Job:  map 5% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:03 INFO mapreduce.Job:  map 6% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:06 INFO mapreduce.Job:  map 7% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:09 INFO mapreduce.Job:  map 8% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:23 INFO mapreduce.Job:  map 9% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:30 INFO mapreduce.Job:  map 10% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:32 INFO mapreduce.Job:  map 11% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:34 INFO mapreduce.Job:  map 12% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:38 INFO mapreduce.Job:  map 13% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:45 INFO mapreduce.Job:  map 14% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:48 INFO mapreduce.Job:  map 15% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:51 INFO mapreduce.Job:  map 16% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:54 INFO mapreduce.Job:  map 17% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:24:57 INFO mapreduce.Job:  map 18% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:01 INFO mapreduce.Job:  map 19% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:07 INFO mapreduce.Job:  map 20% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:16 INFO mapreduce.Job:  map 21% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:22 INFO mapreduce.Job:  map 22% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:31 INFO mapreduce.Job:  map 23% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:34 INFO mapreduce.Job:  map 24% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:36 INFO mapreduce.Job:  map 25% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:40 INFO mapreduce.Job:  map 26% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:48 INFO mapreduce.Job:  map 27% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:51 INFO mapreduce.Job:  map 28% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:54 INFO mapreduce.Job:  map 29% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:25:57 INFO mapreduce.Job:  map 30% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:00 INFO mapreduce.Job:  map 31% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:06 INFO mapreduce.Job:  map 32% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:19 INFO mapreduce.Job:  map 33% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:24 INFO mapreduce.Job:  map 34% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:33 INFO mapreduce.Job:  map 35% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:37 INFO mapreduce.Job:  map 36% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:40 INFO mapreduce.Job:  map 37% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:43 INFO mapreduce.Job:  map 38% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:53 INFO mapreduce.Job:  map 39% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:26:56 INFO mapreduce.Job:  map 40% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:00 INFO mapreduce.Job:  map 41% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:04 INFO mapreduce.Job:  map 42% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:08 INFO mapreduce.Job:  map 43% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:15 INFO mapreduce.Job:  map 44% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:21 INFO mapreduce.Job:  map 45% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:26 INFO mapreduce.Job:  map 46% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:35 INFO mapreduce.Job:  map 47% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:40 INFO mapreduce.Job:  map 48% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:43 INFO mapreduce.Job:  map 49% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:46 INFO mapreduce.Job:  map 50% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:53 INFO mapreduce.Job:  map 51% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:27:58 INFO mapreduce.Job:  map 52% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:03 INFO mapreduce.Job:  map 53% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:07 INFO mapreduce.Job:  map 54% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:12 INFO mapreduce.Job:  map 55% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:17 INFO mapreduce.Job:  map 56% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:24 INFO mapreduce.Job:  map 57% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:30 INFO mapreduce.Job:  map 58% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:38 INFO mapreduce.Job:  map 59% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:45 INFO mapreduce.Job:  map 60% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:48 INFO mapreduce.Job:  map 61% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:28:52 INFO mapreduce.Job:  map 62% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:00 INFO mapreduce.Job:  map 63% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:05 INFO mapreduce.Job:  map 64% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:09 INFO mapreduce.Job:  map 65% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:15 INFO mapreduce.Job:  map 66% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:31 INFO mapreduce.Job:  map 67% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:34 INFO mapreduce.Job:  map 68% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:37 INFO mapreduce.Job:  map 69% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:42 INFO mapreduce.Job:  map 70% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:48 INFO mapreduce.Job:  map 71% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:53 INFO mapreduce.Job:  map 72% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:29:57 INFO mapreduce.Job:  map 73% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:03 INFO mapreduce.Job:  map 74% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:09 INFO mapreduce.Job:  map 75% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:13 INFO mapreduce.Job:  map 76% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:17 INFO mapreduce.Job:  map 77% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:20 INFO mapreduce.Job:  map 78% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:24 INFO mapreduce.Job:  map 79% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:31 INFO mapreduce.Job:  map 80% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:37 INFO mapreduce.Job:  map 81% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:40 INFO mapreduce.Job:  map 82% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:44 INFO mapreduce.Job:  map 83% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:50 INFO mapreduce.Job:  map 84% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:30:57 INFO mapreduce.Job:  map 85% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:01 INFO mapreduce.Job:  map 86% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:06 INFO mapreduce.Job:  map 87% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:12 INFO mapreduce.Job:  map 88% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:17 INFO mapreduce.Job:  map 89% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:21 INFO mapreduce.Job:  map 90% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:24 INFO mapreduce.Job:  map 91% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:29 INFO mapreduce.Job:  map 92% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:36 INFO mapreduce.Job:  map 93% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:39 INFO mapreduce.Job:  map 94% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:43 INFO mapreduce.Job:  map 95% reduce 0%
+[127.0.0.1:13493] out: 15/01/19 21:31:44 INFO mapreduce.Job:  map 95% reduce 1%
+[127.0.0.1:13493] out: 15/01/19 21:31:49 INFO mapreduce.Job:  map 96% reduce 1%
+[127.0.0.1:13493] out: 15/01/19 21:31:50 INFO mapreduce.Job:  map 96% reduce 2%
+[127.0.0.1:13493] out: 15/01/19 21:31:57 INFO mapreduce.Job:  map 97% reduce 2%
+[127.0.0.1:13493] out: 15/01/19 21:32:02 INFO mapreduce.Job:  map 98% reduce 3%
+[127.0.0.1:13493] out: 15/01/19 21:32:03 INFO mapreduce.Job:  map 98% reduce 4%
+[127.0.0.1:13493] out: 15/01/19 21:32:09 INFO mapreduce.Job:  map 99% reduce 4%
+[127.0.0.1:13493] out: 15/01/19 21:32:11 INFO mapreduce.Job:  map 99% reduce 5%
+[127.0.0.1:13493] out: 15/01/19 21:32:12 INFO mapreduce.Job:  map 99% reduce 6%
+[127.0.0.1:13493] out: 15/01/19 21:32:14 INFO mapreduce.Job:  map 99% reduce 7%
+[127.0.0.1:13493] out: 15/01/19 21:32:15 INFO mapreduce.Job:  map 99% reduce 8%
+[127.0.0.1:13493] out: 15/01/19 21:32:16 INFO mapreduce.Job:  map 99% reduce 9%
+[127.0.0.1:13493] out: 15/01/19 21:32:18 INFO mapreduce.Job:  map 99% reduce 10%
+[127.0.0.1:13493] out: 15/01/19 21:32:21 INFO mapreduce.Job:  map 99% reduce 11%
+[127.0.0.1:13493] out: 15/01/19 21:32:24 INFO mapreduce.Job:  map 99% reduce 12%
+[127.0.0.1:13493] out: 15/01/19 21:32:26 INFO mapreduce.Job:  map 99% reduce 13%
+[127.0.0.1:13493] out: 15/01/19 21:32:28 INFO mapreduce.Job:  map 100% reduce 14%
+[127.0.0.1:13493] out: 15/01/19 21:32:31 INFO mapreduce.Job:  map 100% reduce 15%
+[127.0.0.1:13493] out: 15/01/19 21:32:34 INFO mapreduce.Job:  map 100% reduce 16%
+[127.0.0.1:13493] out: 15/01/19 21:32:37 INFO mapreduce.Job:  map 100% reduce 17%
+[127.0.0.1:13493] out: 15/01/19 21:32:39 INFO mapreduce.Job:  map 100% reduce 18%
+[127.0.0.1:13493] out: 15/01/19 21:32:42 INFO mapreduce.Job:  map 100% reduce 20%
+[127.0.0.1:13493] out: 15/01/19 21:32:43 INFO mapreduce.Job:  map 100% reduce 23%
+[127.0.0.1:13493] out: 15/01/19 21:32:45 INFO mapreduce.Job:  map 100% reduce 24%
+[127.0.0.1:13493] out: 15/01/19 21:32:46 INFO mapreduce.Job:  map 100% reduce 25%
+[127.0.0.1:13493] out: 15/01/19 21:32:48 INFO mapreduce.Job:  map 100% reduce 27%
+[127.0.0.1:13493] out: 15/01/19 21:32:49 INFO mapreduce.Job:  map 100% reduce 28%
+[127.0.0.1:13493] out: 15/01/19 21:32:51 INFO mapreduce.Job:  map 100% reduce 29%
+[127.0.0.1:13493] out: 15/01/19 21:32:52 INFO mapreduce.Job:  map 100% reduce 30%
+[127.0.0.1:13493] out: 15/01/19 21:32:54 INFO mapreduce.Job:  map 100% reduce 31%
+[127.0.0.1:13493] out: 15/01/19 21:32:55 INFO mapreduce.Job:  map 100% reduce 32%
+[127.0.0.1:13493] out: 15/01/19 21:32:57 INFO mapreduce.Job:  map 100% reduce 33%
+[127.0.0.1:13493] out: 15/01/19 21:33:00 INFO mapreduce.Job:  map 100% reduce 36%
+[127.0.0.1:13493] out: 15/01/19 21:33:01 INFO mapreduce.Job:  map 100% reduce 37%
+[127.0.0.1:13493] out: 15/01/19 21:33:02 INFO mapreduce.Job:  map 100% reduce 38%
+[127.0.0.1:13493] out: 15/01/19 21:33:04 INFO mapreduce.Job:  map 100% reduce 39%
+[127.0.0.1:13493] out: 15/01/19 21:33:05 INFO mapreduce.Job:  map 100% reduce 42%
+[127.0.0.1:13493] out: 15/01/19 21:33:06 INFO mapreduce.Job:  map 100% reduce 44%
+[127.0.0.1:13493] out: 15/01/19 21:33:08 INFO mapreduce.Job:  map 100% reduce 45%
+[127.0.0.1:13493] out: 15/01/19 21:33:09 INFO mapreduce.Job:  map 100% reduce 47%
+[127.0.0.1:13493] out: 15/01/19 21:33:10 INFO mapreduce.Job:  map 100% reduce 49%
+[127.0.0.1:13493] out: 15/01/19 21:33:11 INFO mapreduce.Job:  map 100% reduce 50%
+[127.0.0.1:13493] out: 15/01/19 21:33:12 INFO mapreduce.Job:  map 100% reduce 51%
+[127.0.0.1:13493] out: 15/01/19 21:33:13 INFO mapreduce.Job:  map 100% reduce 52%
+[127.0.0.1:13493] out: 15/01/19 21:33:14 INFO mapreduce.Job:  map 100% reduce 53%
+[127.0.0.1:13493] out: 15/01/19 21:33:15 INFO mapreduce.Job:  map 100% reduce 54%
+[127.0.0.1:13493] out: 15/01/19 21:33:18 INFO mapreduce.Job:  map 100% reduce 55%
+[127.0.0.1:13493] out: 15/01/19 21:33:21 INFO mapreduce.Job:  map 100% reduce 56%
+[127.0.0.1:13493] out: 15/01/19 21:33:28 INFO mapreduce.Job:  map 100% reduce 57%
+[127.0.0.1:13493] out: 15/01/19 21:33:30 INFO mapreduce.Job:  map 100% reduce 58%
+[127.0.0.1:13493] out: 15/01/19 21:33:31 INFO mapreduce.Job:  map 100% reduce 59%
+[127.0.0.1:13493] out: 15/01/19 21:33:34 INFO mapreduce.Job:  map 100% reduce 60%
+[127.0.0.1:13493] out: 15/01/19 21:33:35 INFO mapreduce.Job:  map 100% reduce 62%
+[127.0.0.1:13493] out: 15/01/19 21:33:36 INFO mapreduce.Job:  map 100% reduce 63%
+[127.0.0.1:13493] out: 15/01/19 21:33:37 INFO mapreduce.Job:  map 100% reduce 64%
+[127.0.0.1:13493] out: 15/01/19 21:33:39 INFO mapreduce.Job:  map 100% reduce 65%
+[127.0.0.1:13493] out: 15/01/19 21:33:40 INFO mapreduce.Job:  map 100% reduce 66%
+[127.0.0.1:13493] out: 15/01/19 21:33:51 INFO mapreduce.Job:  map 100% reduce 67%
+[127.0.0.1:13493] out: 15/01/19 21:33:55 INFO mapreduce.Job:  map 100% reduce 69%
+[127.0.0.1:13493] out: 15/01/19 21:33:57 INFO mapreduce.Job:  map 100% reduce 70%
+[127.0.0.1:13493] out: 15/01/19 21:34:10 INFO mapreduce.Job:  map 100% reduce 71%
+[127.0.0.1:13493] out: 15/01/19 21:34:27 INFO mapreduce.Job:  map 100% reduce 72%
+[127.0.0.1:13493] out: 15/01/19 21:34:39 INFO mapreduce.Job:  map 100% reduce 73%
+[127.0.0.1:13493] out: 15/01/19 21:34:53 INFO mapreduce.Job:  map 100% reduce 74%
+[127.0.0.1:13493] out: 15/01/19 21:35:08 INFO mapreduce.Job:  map 100% reduce 75%
+[127.0.0.1:13493] out: 15/01/19 21:35:19 INFO mapreduce.Job:  map 100% reduce 77%
+[127.0.0.1:13493] out: 15/01/19 21:35:21 INFO mapreduce.Job:  map 100% reduce 79%
+[127.0.0.1:13493] out: 15/01/19 21:35:36 INFO mapreduce.Job:  map 100% reduce 80%
+[127.0.0.1:13493] out: 15/01/19 21:35:47 INFO mapreduce.Job:  map 100% reduce 83%
+[127.0.0.1:13493] out: 15/01/19 21:35:49 INFO mapreduce.Job:  map 100% reduce 84%
+[127.0.0.1:13493] out: 15/01/19 21:36:02 INFO mapreduce.Job:  map 100% reduce 86%
+[127.0.0.1:13493] out: 15/01/19 21:36:04 INFO mapreduce.Job:  map 100% reduce 88%
+[127.0.0.1:13493] out: 15/01/19 21:36:07 INFO mapreduce.Job:  map 100% reduce 89%
+[127.0.0.1:13493] out: 15/01/19 21:36:12 INFO mapreduce.Job:  map 100% reduce 91%
+[127.0.0.1:13493] out: 15/01/19 21:36:17 INFO mapreduce.Job:  map 100% reduce 93%
+[127.0.0.1:13493] out: 15/01/19 21:36:29 INFO mapreduce.Job:  map 100% reduce 95%
+[127.0.0.1:13493] out: 15/01/19 21:36:32 INFO mapreduce.Job:  map 100% reduce 97%
+[127.0.0.1:13493] out: 15/01/19 21:36:42 INFO mapreduce.Job:  map 100% reduce 98%
+[127.0.0.1:13493] out: 15/01/19 21:36:55 INFO mapreduce.Job:  map 100% reduce 100%
+[127.0.0.1:13493] out: 15/01/19 21:36:57 INFO mapreduce.Job: Job job_1418053947170_0796 completed successfully
+[127.0.0.1:13493] out: 15/01/19 21:36:57 INFO mapreduce.Job: Counters: 50
+[127.0.0.1:13493] out:  File System Counters
+[127.0.0.1:13493] out:          FILE: Number of bytes read=19044632723
+[127.0.0.1:13493] out:          FILE: Number of bytes written=28503165197
+[127.0.0.1:13493] out:          FILE: Number of read operations=0
+[127.0.0.1:13493] out:          FILE: Number of large read operations=0
+[127.0.0.1:13493] out:          FILE: Number of write operations=0
+[127.0.0.1:13493] out:          HDFS: Number of bytes read=14029923872
+[127.0.0.1:13493] out:          HDFS: Number of bytes written=689548052
+[127.0.0.1:13493] out:          HDFS: Number of read operations=354
+[127.0.0.1:13493] out:          HDFS: Number of large read operations=0
+[127.0.0.1:13493] out:          HDFS: Number of write operations=26
+[127.0.0.1:13493] out:  Job Counters
+[127.0.0.1:13493] out:          Launched map tasks=105
+[127.0.0.1:13493] out:          Launched reduce tasks=13
+[127.0.0.1:13493] out:          Data-local map tasks=104
+[127.0.0.1:13493] out:          Rack-local map tasks=1
+[127.0.0.1:13493] out:          Total time spent by all maps in occupied slots (ms)=6620950
+[127.0.0.1:13493] out:          Total time spent by all reduces in occupied slots (ms)=3140038
+[127.0.0.1:13493] out:          Total time spent by all map tasks (ms)=6620950
+[127.0.0.1:13493] out:          Total time spent by all reduce tasks (ms)=3140038
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all map tasks=6620950
+[127.0.0.1:13493] out:          Total vcore-seconds taken by all reduce tasks=3140038
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all map tasks=6779852800
+[127.0.0.1:13493] out:          Total megabyte-seconds taken by all reduce tasks=3215398912
+[127.0.0.1:13493] out:  Map-Reduce Framework
+[127.0.0.1:13493] out:          Map input records=4735398
+[127.0.0.1:13493] out:          Map output records=757326813
+[127.0.0.1:13493] out:          Map output bytes=24893178512
+[127.0.0.1:13493] out:          Map output materialized bytes=9529796440
+[127.0.0.1:13493] out:          Input split bytes=11340
+[127.0.0.1:13493] out:          Combine input records=0
+[127.0.0.1:13493] out:          Combine output records=0
+[127.0.0.1:13493] out:          Reduce input groups=10085785
+[127.0.0.1:13493] out:          Reduce shuffle bytes=9529796440
+[127.0.0.1:13493] out:          Reduce input records=757326813
+[127.0.0.1:13493] out:          Reduce output records=10085785
+[127.0.0.1:13493] out:          Spilled Records=2268236761
+[127.0.0.1:13493] out:          Shuffled Maps =1365
+[127.0.0.1:13493] out:          Failed Shuffles=0
+[127.0.0.1:13493] out:          Merged Map outputs=1365
+[127.0.0.1:13493] out:          GC time elapsed (ms)=299108
+[127.0.0.1:13493] out:          CPU time spent (ms)=10325120
+[127.0.0.1:13493] out:          Physical memory (bytes) snapshot=74377625600
+[127.0.0.1:13493] out:          Virtual memory (bytes) snapshot=180641333248
+[127.0.0.1:13493] out:          Total committed heap usage (bytes)=64721780736
+[127.0.0.1:13493] out:  Shuffle Errors
+[127.0.0.1:13493] out:          BAD_ID=0
+[127.0.0.1:13493] out:          CONNECTION=0
+[127.0.0.1:13493] out:          IO_ERROR=0
+[127.0.0.1:13493] out:          WRONG_LENGTH=0
+[127.0.0.1:13493] out:          WRONG_MAP=0
+[127.0.0.1:13493] out:          WRONG_REDUCE=0
+[127.0.0.1:13493] out:  File Input Format Counters
+[127.0.0.1:13493] out:          Bytes Read=14029912532
+[127.0.0.1:13493] out:  File Output Format Counters
+[127.0.0.1:13493] out:          Bytes Written=689548052
+[127.0.0.1:13493] out:
+
+
