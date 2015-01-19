@@ -5,7 +5,9 @@ Java example of making wikipedia TF-IDF word index with Apache Hadoop MapReduce.
  - `WikiNumberOfDocs` - evaluate number of docs
  - `WikiWordTFIDFIndex` - evaluate TF-IDF word index
 
-See [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build.log.txt) and [result.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/result.log.txt).
+See [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build.log.txt) and [result.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/result.log.txt) - first build log (without fix2bugs - top 21 docs for one word).
+
+See [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build2.log.txt) and [result.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/result2.log.txt) - first build log (with fix2bugs - top 20 docs for one word).
 
 
 # How-to run #
@@ -60,6 +62,8 @@ Hadoop work on 8x nodes: 2x Dual-core AMD Opteron 285 2.6 GHz, 8 GB RAM, 150 GB 
 * Time *  
  - `WikiNumberOfDocs` - ru : 19:33:48 - 19:34:39 (0:00:51); en : 19:35:03 - 19:36:49 (0:01:46)
  - `WikiWordTFIDFIndex` - ru : 19:37:12 - 19:41:07 (0:03:55); en : 19:41:30 - 19:53:03 (0:11:33)
+
+see [result.log](https://github.com/pahaz/twitter-hadoop-example/blob/master/result.log.txt) and [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build.log.txt)
 
 
 # Other #
