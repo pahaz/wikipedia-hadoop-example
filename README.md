@@ -77,11 +77,14 @@ see [result.log](https://github.com/pahaz/twitter-hadoop-example/blob/master/res
  - `tf(w, d)` - term frequency (word frequency in one doc)
  - `idf(w, D)` - inverse document frequency (inverse value of word frequency in all docs)
 
+*Formulas*
+
 `tf(w, d) = 0.5 + 0.5 * freq(w, d) / max( freq(wi, d) for wi in d )` - [code](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/src/main/java/WikiWordTFIDFIndex.java#L92)
 
 `idf(w, D) = LOG( total_number_of_docs / number_of_docs_where_word_appears )` - [code](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/src/main/java/WikiWordInfo.java#L59)
 
 *Map*: `(doc1, doc1_content)` -> `[[word1, [idf=?, doc1:tf(word1, doc1)]], ..., [wordN, [idf=?, doc1:tf(wordN, doc1)]]]`
+
 *Reduce*: `(word1, [[idf1, doc1:tf], ..., [idf1, docK:tf]])` -> `(word1, [new_idf, doc1:tf, ..., docK:tf])`
 
 
