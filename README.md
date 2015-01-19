@@ -1,17 +1,17 @@
 # Wikipedia TF-IDF Index #
 
-Java example of making wikipedid TF-IDF word index with Apache Hadoop MapReduce.
+Java example of making wikipedia TF-IDF word index with Apache Hadoop MapReduce.
 
  - `WikiNumberOfDocs` - evaluate number of docs
  - `WikiWordTFIDFIndex` - evaluate TF-IDF word index
 
-See [build.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/build.log.txt) and [result.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/result.log.txt).
+See [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build.log.txt) and [result.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/result.log.txt).
 
 
 # How-to run #
 
-    git clone https://github.com/pahaz/wikipedid-hadoop-example.git
-    cd wikipedid-hadoop-example
+    git clone https://github.com/pahaz/wikipedia-hadoop-example.git
+    cd wikipedia-hadoop-example
     
     mvn compile
     mvn package
@@ -25,7 +25,7 @@ See [build.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/bu
     hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/ru/articles /user/s0073/w_count_words_ru/part-00000 /user/s0073/w_tfidf_ru
     hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/en/articles /user/s0073/w_count_words_en/part-00000 /user/s0073/w_tfidf_en
 
-see [build.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/build.log.txt)
+see [build.log](https://github.com/pahaz/wikipedia-hadoop-example/blob/master/build.log.txt)
 
     
 # Source Data format #
