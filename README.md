@@ -64,6 +64,14 @@ Hadoop work on 8x nodes: 2x Dual-core AMD Opteron 285 2.6 GHz, 8 GB RAM, 150 GB 
 
 # Other #
 
-Sometime you need up hadoop job priority. Use this command:
+If you need increase hadoop job priority use command:
 
     mapred job -set-priority <job_id> VERY_HIGH
+
+If you want merge w_count_words_ru results use command:
+
+    hadoop fs -cat /user/s0073/w_count_words_ru/* | hadoop fs -put - /user/s0073/w_count_words_ru.txt
+
+If you want merge w_count_words_ru and save results in local fs use command:
+
+    hadoop fs -getmerge /user/s0073/w_count_words_ru w_count_words_ru.txt
