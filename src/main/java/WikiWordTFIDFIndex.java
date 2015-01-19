@@ -12,14 +12,14 @@ import java.util.Iterator;
 
 public class WikiWordTFIDFIndex {
   public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, WikiWordInfo> {
-    private Integer NUMBER_OF_DOCS;
     private WikiWordInfo map_val;
     private Text map_key;
 
     @Override
     public void configure(JobConf job) {
-      NUMBER_OF_DOCS = job.getInt("NUMBER_OF_DOCS", 1);
-      map_val = new WikiWordInfo(NUMBER_OF_DOCS);
+      Integer NUMBER_OF_DOCS = job.getInt("NUMBER_OF_DOCS", 1);
+      Integer MAX_NUMBER_OF_RESULTS = job.getInt("MAX_NUMBER_OF_RESULTS", 1);
+      map_val = new WikiWordInfo(NUMBER_OF_DOCS, MAX_NUMBER_OF_RESULTS);
       map_key = new Text();
       super.configure(job);
     }
@@ -65,14 +65,14 @@ public class WikiWordTFIDFIndex {
   }
 
   public static class Reduce extends MapReduceBase implements Reducer<Text, WikiWordInfo, Text, WikiWordInfo> {
-    private Integer NUMBER_OF_DOCS;
     private WikiWordInfo map_val;
     private WikiWordInfoUpdater updater;
 
     @Override
     public void configure(JobConf job) {
-      NUMBER_OF_DOCS = job.getInt("NUMBER_OF_DOCS", 1);
-      map_val = new WikiWordInfo(NUMBER_OF_DOCS);
+      Integer NUMBER_OF_DOCS = job.getInt("NUMBER_OF_DOCS", 1);
+      Integer MAX_NUMBER_OF_RESULTS = job.getInt("MAX_NUMBER_OF_RESULTS", 1);
+      map_val = new WikiWordInfo(NUMBER_OF_DOCS, MAX_NUMBER_OF_RESULTS);
       updater = new WikiWordInfoUpdater();
       super.configure(job);
     }
@@ -108,12 +108,16 @@ public class WikiWordTFIDFIndex {
 
     FileInputFormat.setInputPaths(conf, new Path(args[0]));
     FileOutputFormat.setOutputPath(conf, new Path(args[2]));
-    FSDataInputStream in = fs.open(new Path(args[1]));
 
+    // set NUMBER_OF_DOCS from args[1]
+    FSDataInputStream in = fs.open(new Path(args[1]));
     String line = in.readLine();
     String[] textAndCount = line.split("\t");
     int NUMBER_OF_DOCS = Integer.parseInt(textAndCount[1]);
     conf.setInt("NUMBER_OF_DOCS", NUMBER_OF_DOCS);
+
+    // set MAX_NUMBER_OF_RESULTS
+    conf.setInt("MAX_NUMBER_OF_RESULTS", 20);
 
     JobClient.runJob(conf);
   }

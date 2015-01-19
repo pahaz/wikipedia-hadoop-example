@@ -16,43 +16,50 @@ See [build.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/bu
     mvn compile
     mvn package
     
-    hadoop fs -rm -r /user/s0073/w_count_words || echo "No"
-    hadoop fs -rm -r /user/s0073/w_tfidf || echo "No"
-    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiNumberOfDocs   /data/wiki/ru/articles /user/s0073/w_count_words
-    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/ru/articles /user/s0073/w_count_words/part-00000 /user/s0073/w_tfidf
+    hadoop fs -rm -r /user/s0073/w_count_words_ru || echo "No"
+    hadoop fs -rm -r /user/s0073/w_count_words_en || echo "No"
+    hadoop fs -rm -r /user/s0073/w_tfidf_ru || echo "No"
+    hadoop fs -rm -r /user/s0073/w_tfidf_en || echo "No"
+    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiNumberOfDocs   /data/wiki/ru/articles /user/s0073/w_count_words_ru
+    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiNumberOfDocs   /data/wiki/en/articles /user/s0073/w_count_words_en
+    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/ru/articles /user/s0073/w_count_words_ru/part-00000 /user/s0073/w_tfidf_ru
+    hadoop jar target/hhd-1.0-SNAPSHOT.jar WikiWordTFIDFIndex /data/wiki/en/articles /user/s0073/w_count_words_en/part-00000 /user/s0073/w_tfidf_en
 
 see [build.log](https://github.com/pahaz/wikipedid-hadoop-example/blob/master/build.log.txt)
 
     
 # Source Data format #
 
- - `/data/wiki/ru/articles` contains strings like `doc_id \t doc_content` (without spaces around `\t`)
+ - `/data/wiki/*/articles` contains strings like `doc_id \t doc_content` (without spaces around `\t`)
 
+ 
 # Generated Data formats #
 
- - `/user/s0073/w_count_words/part-00000 ` - contains one string `Count: \t number_of_docs` (without spaces around `\t`)
- - `/user/s0073/w_tfidf` - contains strings like `word \t doc_id1:tfidf \t doc_id2:tfidf ...` (without spaces around `\t`)
+ - `/user/s0073/w_count_words_*/part-00000 ` - contains one string `Count: \t number_of_docs` (without spaces around `\t`)
+ - `/user/s0073/w_tfidf_*` - contains strings like `word \t doc_id1:tfidf \t doc_id2:tfidf ...` (without spaces around `\t`)
+ 
  
 # How-to view results #
 
-    # hadoop fs -cat /user/s0073/w_tfidf*
-    hadoop fs -cat /user/s0073/w_count_words/*
+    # hadoop fs -cat /user/s0073/w_tfidf_ru/*
+    hadoop fs -cat /user/s0073/w_count_words_*/*
 
 see [result.log](https://github.com/pahaz/twitter-hadoop-example/blob/master/result.log.txt)
+
 
 # Time #
 
 Hadoop work on 8x nodes: 2x Dual-core AMD Opteron 285 2.6 GHz, 8 GB RAM, 150 GB HDD.
 
 * Files *  
- - `/data/twitter/twitter_rv.net` - 24.4 G
- - `/user/s0073/count` - 35.6 M * 13 (parts 00000 - 00012)
+ - `/data/wiki/ru/articles` - 5.3 G
+ - `/data/wiki/en/articles` - 13.1 G
+ - `/user/s0073/w_tfidf_ru` - 35.6 M * 13 (parts 00000 - 00012)
+ - `/user/s0073/w_tfidf_en` - 51.4 M * 13 (parts 00000 - 00012)
 
 * Time *  
- - `TwitterFollowerCounter` - 22:32:52 - 23:02:35 (0:29:43)
- - `TwitterAvgFollowers` - 23:02:43 - 23:04:24 (0:01:41)
- - `TwitterTopFollowers` - 23:04:31 - 23:06:50 (0:02:19)
- - `TwitterFollowerCounterGroupByRanges` - 23:06:57 - 23:08:06 (0:01:09)
+ - `WikiNumberOfDocs` - ru : 19:33:48 - 19:34:39 (0:00:51); en : 19:35:03 - 19:36:49 (0:01:46)
+ - `WikiWordTFIDFIndex` - ru : 19:37:12 - 19:41:07 (0:03:55); en : 19:41:30 - 19:53:03 (0:11:33)
 
 
 # Other #

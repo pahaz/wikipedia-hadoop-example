@@ -9,18 +9,23 @@ import java.util.TreeSet;
 
 public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
     private int NUMBER_OF_DOCS;
+    private int MAX_NUMBER_OF_RESULTS;
     private Float _idf;
     private Integer _totalFreq;
     private WikiWordInfoEntry[] entries;
 
-    public WikiWordInfo(int NUMBER_OF_DOCS) throws NumberFormatException {
+    public WikiWordInfo(int NUMBER_OF_DOCS, int MAX_NUMBER_OF_RESULTS) throws NumberFormatException {
         if (NUMBER_OF_DOCS < 1) {
-            throw new NumberFormatException("Negative number of documents");
+            throw new NumberFormatException("Negative or 0 number of documents");
+        }
+        if (MAX_NUMBER_OF_RESULTS < 0) {
+            throw new ArithmeticException("Negative number of results");
         }
         this.NUMBER_OF_DOCS = NUMBER_OF_DOCS;
+        this.MAX_NUMBER_OF_RESULTS = MAX_NUMBER_OF_RESULTS;
     }
     public WikiWordInfo() throws NumberFormatException {
-        this(1);
+        this(1, 0);
     }
 
     public Integer getTotalFreq() {
@@ -91,15 +96,21 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
                 return -1 * ((x < y) ? -1 : ((x == y) ? 0 : 1));
             }
         });
+
         Collections.addAll(sortedEntries, entries);
 
         int i = 0;
+        int max = sortedEntries.size();
+        if (MAX_NUMBER_OF_RESULTS != 0 && max > MAX_NUMBER_OF_RESULTS) {
+            max =  MAX_NUMBER_OF_RESULTS;
+        }
+
         for(WikiWordInfoEntry entry: sortedEntries){
             sb.append(entry.id);
             sb.append(':');
             sb.append(entry.tf);
 
-            if (i++ >= 20) {
+            if (i++ >= max) {
                 break;
             } else {
                 sb.append('\t');
@@ -109,7 +120,4 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
         return sb.toString();
     }
 
-//    public void fromString(String source){
-//
-//    }
 }
