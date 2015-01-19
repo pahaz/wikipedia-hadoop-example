@@ -41,6 +41,7 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
     public void set(String id, Float tf, Integer freq){
         set(new WikiWordInfoEntry(id, tf, freq));
     }
+
     public void set(WikiWordInfoEntry entry) {
         set(new WikiWordInfoEntry[]{entry});
     }
@@ -93,27 +94,29 @@ public class WikiWordInfo implements WritableComparable<WikiWordInfo> {
             public int compare(WikiWordInfoEntry o1, WikiWordInfoEntry o2) {
                 float x = o1.tf * _idf;
                 float y = o2.tf * _idf;
-                return -1 * ((x < y) ? -1 : ((x == y) ? 0 : 1));
+                return -1 * ((x < y) ? -1 : 1);  // without 0 - all elements are different!
             }
         });
 
+        System.out.println(entries.length);
         Collections.addAll(sortedEntries, entries);
 
         int i = 0;
         int max = sortedEntries.size();
+        System.out.println(max);
         if (MAX_NUMBER_OF_RESULTS != 0 && max > MAX_NUMBER_OF_RESULTS) {
-            max =  MAX_NUMBER_OF_RESULTS;
+            max = MAX_NUMBER_OF_RESULTS;
         }
-
+        System.out.println(max);
         for(WikiWordInfoEntry entry: sortedEntries){
             sb.append(entry.id);
             sb.append(':');
             sb.append(entry.tf);
 
-            if (i++ >= max) {
-                break;
-            } else {
+            if (++i < max) {
                 sb.append('\t');
+            } else {
+                break;
             }
         }
 
